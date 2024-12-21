@@ -1,0 +1,84 @@
+html {
+	font-family: 'Comic Sans MS';
+}
+
+div#main {
+	color: darkblue;
+	display: grid;
+	grid-template-columns: 15% auto 30%;
+	grid-template-rows: 10vh auto auto 15vh;
+}
+
+header {
+	background: lightblue;
+	color: green;
+	grid-column: 1 / 4;
+}
+nav#mainmenu { 
+	grid-column: 1 / 4;
+	grid-row: 2;
+}
+nav#mainmenu div.button {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	width: 33%;
+}
+nav,main,aside {
+	grid-row: 3;
+}
+/*main {
+	grid-column: 2
+}
+
+aside {
+	grid-column: 3;
+}*/
+footer {
+	grid-column: 1 / 4;
+}
+p {
+	color: red;
+	/*background: lightgray;*/
+}
+#wyrozniony {
+	font-size: 30px;
+}
+.button {
+	background: lightgreen;
+	border: 1px solid red;
+	font-size: 16px;
+	display: inline-block;
+	width: 100px;
+}
+footer {
+	display: flex;
+	/*flex-wrap: wrap;*/
+}
+footer div:first-child {
+	width: 40%;
+	background: yellow;
+}
+footer div:last-child {
+	width: 60%;
+	background: gray;
+}
+/*
+	jednostki bezwzględne:
+	px - 1/96 cala
+	Q - 1/40 cm
+	mm
+	cm
+	in 
+	pt - 1/72 in
+	pc - 1/6 in
+	jednostki względne:
+	
+	jednostki realtywne:
+	em - 1 wielkość czcinki głównej (dla elementu) 
+	ex - 1 szerokość czcionki głównej (dla elementu)
+	rem - relatywna wartość szerokości czcionki głównej (root font - czcionka domyślna dla naszej strony)
+	% - wartości procentowe wysokości lub szerokości (procent z wysokości strony w 90% przypadków wyniesie 0 - bo liczony jest od domyślnych wartości)
+	vw - viewport witdth - 1% szerokości okna widoku strony
+	vh - viewport height - 1% wysokości okna widoku strony
+*/
