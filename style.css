@@ -1,0 +1,22 @@
+header {
+    background: blue;
+}
+
+p {
+    color: red;
+    background: lightgray;
+}
+.wyrozniony {
+    background: yellow;
+}
+#wyrozniony {
+    background: green;
+}
+
+.button {
+    background: lightgreen;
+    border: 1px solid red;
+    font-size: 16px;
+    max-width: 200px;
+    min-width: 100px;
+}
